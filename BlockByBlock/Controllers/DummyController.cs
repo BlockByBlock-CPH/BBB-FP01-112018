@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using BlockByBlock.Models;
+using System.IO;
 
 namespace BlockByBlock.Controllers
 {
@@ -15,10 +16,43 @@ namespace BlockByBlock.Controllers
         // GET: Dummy
         public ActionResult Index()
         {
+            List<Mtc_Activity> Data = new List<Mtc_Activity>();
             
-            var result = _data.Products.ToList();
+var reader = new StreamReader(@"D:\Repositories\BlockByBlock-Resources\Data\Activity_MUCNW_example_SW5x24(1).csv");
+            int i = 0;
+            while (!reader.EndOfStream)
+            { var line = reader.ReadLine();
+                var values = line.Split(';');
 
-            return View(result);
+                if (i!=0)
+                {
+
+                    Mtc_Activity single = new Mtc_Activity
+                    {
+                        Zone_act = Int32.Parse(values[0]),
+                        Count_act = Int32.Parse(values[1])
+                    };
+                    if (values[2] == "0+1")
+                        values[2] = "0";
+                    else if (values[2] == "1+1")
+                        values[2] = "1";
+
+                    single.Hours_act= Int32.Parse(values[2]);
+                single.Days_act = values[3];
+
+                Data.Add(single);
+                    
+                }
+               i++;
+            }
+
+
+
+
+            _data.Mtc_Activities.AddRange(Data);
+            _data.SaveChanges();
+
+            return View();
         }
     }
 }

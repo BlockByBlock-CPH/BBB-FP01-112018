@@ -3,7 +3,7 @@ namespace BlockByBlock.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Mtc_Activity : DbMigration
+    public partial class modi : DbMigration
     {
         public override void Up()
         {
@@ -14,7 +14,7 @@ namespace BlockByBlock.Migrations
                         Id_act = c.Int(nullable: false, identity: true),
                         Zone_act = c.Int(nullable: false),
                         Count_act = c.Int(nullable: false),
-                        Hours_act = c.String(),
+                        Hours_act = c.Int(nullable: false),
                         Days_act = c.String(),
                     })
                 .PrimaryKey(t => t.Id_act);

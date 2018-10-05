@@ -7,13 +7,13 @@ namespace BlockByBlock.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Mtc_Activity : IMigrationMetadata
+    public sealed partial class modi : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Mtc_Activity));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(modi));
         
         string IMigrationMetadata.Id
         {
-            get { return "201809232201467_Mtc_Activity"; }
+            get { return "201810052140219_modi"; }
         }
         
         string IMigrationMetadata.Source

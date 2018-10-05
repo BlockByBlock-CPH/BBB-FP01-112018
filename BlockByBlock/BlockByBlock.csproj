@@ -236,9 +236,9 @@
     <Compile Include="Migrations\201809232136476_first.Designer.cs">
       <DependentUpon>201809232136476_first.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201809232201467_Mtc_Activity.cs" />
-    <Compile Include="Migrations\201809232201467_Mtc_Activity.Designer.cs">
-      <DependentUpon>201809232201467_Mtc_Activity.cs</DependentUpon>
+    <Compile Include="Migrations\201810052140219_modi.cs" />
+    <Compile Include="Migrations\201810052140219_modi.Designer.cs">
+      <DependentUpon>201810052140219_modi.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -336,8 +336,8 @@
     <EmbeddedResource Include="Migrations\201809232136476_first.resx">
       <DependentUpon>201809232136476_first.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809232201467_Mtc_Activity.resx">
-      <DependentUpon>201809232201467_Mtc_Activity.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810052140219_modi.resx">
+      <DependentUpon>201810052140219_modi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
