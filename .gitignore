@@ -6,3 +6,4 @@
 /.vs
 /BlockByBlock/ConnectionStrings.config
 /BlockByBlock/PrivateSettings.config
+/BlockByBlock/obj/Release
