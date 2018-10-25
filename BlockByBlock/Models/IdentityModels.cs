@@ -29,6 +29,7 @@ namespace BlockByBlock.Models
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Mtc_Activity> Mtc_Activities { get; set; }
+        public DbSet<Mtc_Homezone> Mtc_Homezones { get; set; }
 
         public static ApplicationDbContext Create()
         {

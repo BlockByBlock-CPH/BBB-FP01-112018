@@ -14,7 +14,7 @@ namespace BlockByBlock.Controllers
         ApplicationDbContext _data = new ApplicationDbContext();
 
         // GET: Dummy
-        public ActionResult Index()
+        public ActionResult Mtc_Activity()
         {
             List<Mtc_Activity> Data = new List<Mtc_Activity>();
             
