@@ -50,7 +50,7 @@ var reader = new StreamReader(@"D:\Repositories\BlockByBlock-Resources\Data\Acti
                     //single.Days_act = values[3];
 
                     if (values[3] == "MON")
-                        single.Day_act = 1;
+                        single.Day_act = 6;
                     else if (values[3] == "TUE-THU")
                         single.Day_act = 2;
                     else if (values[3] == "FRI")
