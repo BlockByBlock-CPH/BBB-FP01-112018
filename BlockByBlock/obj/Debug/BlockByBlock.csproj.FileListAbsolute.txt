@@ -953,5 +953,5 @@ E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.cspr
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.csproj.CopyComplete
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.dll
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.pdb
-E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.Migrations.Mtc_Activity.resources
 D:\Repositories\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.Migrations.modi.resources
+E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.Migrations.modi.resources

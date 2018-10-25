@@ -37,13 +37,33 @@ var reader = new StreamReader(@"D:\Repositories\BlockByBlock-Resources\Data\Acti
                     else if (values[2] == "1+1")
                         values[2] = "1";
 
-                    single.Hours_act= Int32.Parse(values[2]);
-                single.Days_act = values[3];
+                    //        single.Hours_act= Int32.Parse(values[2]);
+                    //    single.Days_act = values[3];
 
-                Data.Add(single);
-                    
+                    //    Data.Add(single);
+
+                    //    }
+                    //   i++;
+                    //}
+
+                    single.Hours_act = Int32.Parse(values[2]);
+                    //single.Days_act = values[3];
+
+                    if (values[3] == "MON")
+                        single.Day_act = 1;
+                    else if (values[3] == "TUE-THU")
+                        single.Day_act = 2;
+                    else if (values[3] == "FRI")
+                        single.Day_act = 3;
+                    else if (values[3] == "SAT")
+                        single.Day_act = 4;
+                    else if (values[3] == "SUN")
+                        single.Day_act = 5;
+
+                    Data.Add(single);
+
                 }
-               i++;
+                i++;
             }
 
 
