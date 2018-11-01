@@ -713,6 +713,7 @@ D:\Repositories\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.dll
 D:\Repositories\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.pdb
 D:\Repositories\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.Migrations.first.resources
 D:\Repositories\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.csproj.GenerateResource.cache
+D:\Repositories\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.Migrations.modi.resources
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\bin\ApplicationInsights.config
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\bin\BlockByBlock.dll.config
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\bin\BlockByBlock.dll
@@ -946,12 +947,11 @@ E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\bin\fi\Npgsql.resources.dll
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\bin\fr\Npgsql.resources.dll
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\bin\ja\Npgsql.resources.dll
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\bin\zh-CN\Npgsql.resources.dll
-E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.csprojAssemblyReference.cache
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.Migrations.first.resources
+E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.Migrations.modi.resources
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.csproj.GenerateResource.cache
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.csproj.CoreCompileInputs.cache
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.csproj.CopyComplete
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.dll
 E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.pdb
-D:\Repositories\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.Migrations.modi.resources
-E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.Migrations.modi.resources
+E:\ASP.net\BlockByBlock\BBB-FP01-112018\BlockByBlock\obj\Debug\BlockByBlock.csprojAssemblyReference.cache
