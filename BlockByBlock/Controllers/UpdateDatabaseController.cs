@@ -131,7 +131,8 @@ namespace BlockByBlock.Controllers
                         Gid = Int32.Parse(values[0]),
                         Id = Int32.Parse(values[1]),
                         Groesse = Convert.ToDouble(values[2]),
-                        Geom = values[3]
+                        Geom = values[3],
+                        Area = Convert.ToDouble(values[4])
                     };
 
                     Data.Add(single);
