@@ -1,0 +1,56 @@
+﻿
+@model IEnumerable<BlockByBlock.Models.Mtc>
+
+@{
+
+    ViewBag.Title = "Mtc";
+}
+
+<h2>Mtc</h2>
+
+
+
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Gid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Groesse)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Geom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Area)
+        </th>
+        
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Groesse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Geom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Area)
+            </td>
+            
+        </tr>
+    }
+</table>
+

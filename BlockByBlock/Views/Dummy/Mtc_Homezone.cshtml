@@ -1,0 +1,48 @@
+﻿@model IEnumerable<BlockByBlock.Models.Mtc_Homezone>
+
+@{
+    ViewBag.Title = "Mtc_Homezone";
+}
+
+<h2>Mtc_Homezone</h2>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id_hz)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zone_hz)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Home_hz)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Day_hz)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Shared_hz)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_hz)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Zone_hz)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Home_hz)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Day_hz)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Shared_hz)
+        </td>
+    </tr>
+    }
+</table>

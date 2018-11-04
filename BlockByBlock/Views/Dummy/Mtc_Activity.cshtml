@@ -1,0 +1,56 @@
+﻿@model IEnumerable<BlockByBlock.Models.Mtc_Activity>
+
+@{
+    ViewBag.Title = "Mtc_Activity";
+}
+
+<h2>Mtc_Activity</h2>
+
+
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id_act)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zone_act)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Count_act)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hours_act)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Day_act)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Density)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_act)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Zone_act)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Count_act)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hours_act)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Day_act)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Density)
+        </td>
+    </tr>
+    }
+</table>
