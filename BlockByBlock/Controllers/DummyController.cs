@@ -16,7 +16,7 @@ namespace BlockByBlock.Controllers
 
         public ActionResult Nicklas()
         {
-            Nicklas_View_Model Nicklas = new Nicklas_View_Model();
+            List<Nicklas_View_Model> Nicklas = new List<Nicklas_View_Model>();
 
             try
             {
@@ -159,63 +159,65 @@ namespace BlockByBlock.Controllers
         //    return View(Data);
         //}
 
-        //public ActionResult Mtc()
-        //{
-        //    List<Mtc> Data = new List<Mtc>();
+        public ActionResult Mtc()
+        {
+            List<Mtc> Data = new List<Mtc>();
 
-        //    //var reader = new StreamReader(@"D:\Repositories\BlockByBlock-Resources\Data_source_for_Tables\mtc.xls");
-        //    var reader = new StreamReader(@"D:\Repositories\BlockByBlock-Resources\Data_source_for_Tables\Test.csv");
-
-
-        //    int i = 0;
-        //    while (!reader.EndOfStream)
-        //    {
-        //        var line = reader.ReadLine();
-        //        var values = line.Split(';');
-        //        //var line = reader.ReadLine();
-
-        //        //string Seperator = "\t";
-        //        //var values = line.Split(Seperator.ToCharArray());
+            //var reader = new StreamReader(@"D:\Repositories\BlockByBlock-Resources\Data_source_for_Tables\mtc.xls");
+            var reader = new StreamReader(@"D:\Repositories\BlockByBlock-Resources\Data_Source_from_Tables\Phase1\mtc(csv)");
 
 
-        //        //var x = values[0];
-        //        //var y = values[1];
-        //        //string x1 = x;
-        //        //var y1 = y.GetType().Name;
-        //        //bool isNumeric = int.TryParse(y, out int n);
-        //        //int y2 = Int32.Parse(y);
-        //        //int p = n;
-        //        if (i != 0)
-        //        {
+            int i = 0;
+            while (!reader.EndOfStream)
+            {
+                var line = reader.ReadLine();
+                var values = line.Split(';');
+                //var line = reader.ReadLine();
 
-        //            // values[2] = values[2].Replace(",", ".");
-        //            values[4]= values[4].Replace("\"", string.Empty);
-        //            values[3] = values[3].Replace("\"", string.Empty);
-
-        //            Mtc single = new Mtc
-        //            {
-        //               Gid = Int32.Parse(values[0]),
-        //                Id = Int32.Parse(values[1]),
-        //                Groesse = Convert.ToDouble(values[2]),
-        //                Geom = values[3],
-        //               Area = Convert.ToDouble(values[4])
-
-        //            };
-
-        //            Data.Add(single);
-
-        //        }
-        //        i++;
-        //    }
+                //string Seperator = "\t";
+                //var values = line.Split(Seperator.ToCharArray());
 
 
+                //var x = values[0];
+                //var y = values[1];
+                //string x1 = x;
+                //var y1 = y.GetType().Name;
+                //bool isNumeric = int.TryParse(y, out int n);
+                //int y2 = Int32.Parse(y);
+                //int p = n;
 
 
-        //    //_data.Mtc_Activities.AddRange(Data);
-        //    //_data.SaveChanges();
+                if (i != 0)
+                {
 
-        //    return View(Data);
-        //}
+                    // values[2] = values[2].Replace(",", ".");
+                    values[4] = values[4].Replace("\"", string.Empty);
+                    values[3] = values[3].Replace("\"", string.Empty);
+
+                    Mtc single = new Mtc
+                    {
+                        Gid = Int32.Parse(values[0]),
+                        Id = Int32.Parse(values[1]),
+                        Groesse = Convert.ToDouble(values[2]),
+                        Geom = values[3],
+                        Area = Convert.ToDouble(values[4])
+
+                    };
+
+                    Data.Add(single);
+
+                }
+                i++;
+            }
+
+
+
+
+            //_data.Mtc_Activities.AddRange(Data);
+            //_data.SaveChanges();
+
+            return View(Data);
+        }
 
 
     }
