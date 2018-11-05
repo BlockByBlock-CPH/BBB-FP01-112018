@@ -147,5 +147,40 @@ namespace BlockByBlock.Controllers
             return View();
         }
 
+
+        public ActionResult Mtc_Points()
+        {
+            List<Mtc_Points> Data = new List<Mtc_Points>();
+
+            var reader = new StreamReader(@"E:\ASP.net\BlockByBlock\New_Data\Mtc_Data_Backend.csv");
+            int i = 0;
+            while (!reader.EndOfStream)
+            {
+                var line = reader.ReadLine();
+                var values = line.Split(';');
+
+                if (i != 0)
+                {
+
+                    Mtc_Points single = new Mtc_Points
+                    {
+                        
+                        MId = Int32.Parse(values[0]),
+                        X = Convert.ToDouble(values[1]),                        
+                        Y = Convert.ToDouble(values[2])
+                    };
+
+                    Data.Add(single);
+
+                }
+                i++;
+            }
+
+            _data.Mtc_Points.AddRange(Data);
+            _data.SaveChanges();
+
+            return View();
+        }
+
     }
 }

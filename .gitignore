@@ -7,3 +7,7 @@
 /BlockByBlock/ConnectionStrings.config
 /BlockByBlock/PrivateSettings.config
 /BlockByBlock/obj/Release
+/BlockByBlock/Data/Mtc_Data_Backend.csv
+/BlockByBlock/Data/mtc(csv)
+/BlockByBlock/Data/Activity_MUCNW_example_SW7x24.csv
+/BlockByBlock/Data/Activity_MUCNW_example_homezone (1).csv
