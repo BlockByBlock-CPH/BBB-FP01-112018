@@ -250,6 +250,7 @@
     <Compile Include="Models\Mtc_Activity.cs" />
     <Compile Include="Models\Mtc_Homezone.cs" />
     <Compile Include="Models\Mtc_Points.cs" />
+    <Compile Include="Models\Nicklas_View_Model.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -272,11 +273,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="PrivateSettings.config" />
-    <Content Include="Data\Activity_MUCNW_example_SW7x24.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Data\Mtc_Data_Backend.csv" />
-    <Content Include="Data\Activity_MUCNW_example_homezone %281%29.csv" />
     <Content Include="Data\mtc%28csv%29" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -329,6 +326,7 @@
     <Content Include="Views\Dummy\Mtc_Homezone.cshtml" />
     <Content Include="Views\Dummy\Mtc_Activity.cshtml" />
     <Content Include="Views\Dummy\Mtc.cshtml" />
+    <Content Include="Views\Dummy\Nicklas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -152,7 +152,7 @@ namespace BlockByBlock.Controllers
         {
             List<Mtc_Points> Data = new List<Mtc_Points>();
 
-            var reader = new StreamReader(@"E:\ASP.net\BlockByBlock\New_Data\Mtc_Data_Backend.csv");
+            var reader = new StreamReader(@"D:\Repositories\BBB-FP01-112018\BlockByBlock\Data\Mtc_Data_Backend.csv");
             int i = 0;
             while (!reader.EndOfStream)
             {
