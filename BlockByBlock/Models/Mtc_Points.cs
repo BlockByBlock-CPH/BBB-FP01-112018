@@ -7,7 +7,7 @@ using System.Web;
 namespace BlockByBlock.Models
 {
     public class Mtc_Points
-    {   
+    {   [Key]
         public int Id { get; set; }
         public int MId { get; set; }        
         public double X { get; set; }

@@ -157,17 +157,17 @@ namespace BlockByBlock.Controllers
             while (!reader.EndOfStream)
             {
                 var line = reader.ReadLine();
-                var values = line.Split(';');
-
+                var values = line.Split(',');
+                
                 if (i != 0)
                 {
 
                     Mtc_Points single = new Mtc_Points
                     {
                         
-                        MId = Int32.Parse(values[0]),
-                        X = Convert.ToDouble(values[1]),                        
-                        Y = Convert.ToDouble(values[2])
+                        MId = Int32.Parse(values[0].Replace("\"", string.Empty)),
+                        X = Convert.ToDouble(values[1].Replace("\"", string.Empty)),                        
+                        Y = Convert.ToDouble(values[2].Replace("\"", string.Empty))
                     };
 
                     Data.Add(single);

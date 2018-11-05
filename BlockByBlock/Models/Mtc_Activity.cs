@@ -15,8 +15,7 @@ namespace BlockByBlock.Models
         public int Id_act { get; set; }
         public int Zone_act { get; set; }
         public int Count_act { get; set; }
-        public int Hours_act { get; set; }
-        //public string Days_act { get; set; }
+        public int Hours_act { get; set; }        
         public int Day_act { get; set; }
         public double Density { get; set; }
 
