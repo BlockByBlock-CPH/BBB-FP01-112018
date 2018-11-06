@@ -15,4 +15,6 @@ namespace BlockByBlock.Models
         public string Geom { get; set; }        
         public double Area { get; set; }
     }
+
+
 }
