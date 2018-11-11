@@ -36,75 +36,82 @@
 
 <script>
 
-
-   
-    const zones = [
-        { percent: 0.003575259, distance: 1118.08223702 },
-        { percent: 0.003694435, distance: 1000.45288078 },
-        { percent: 0.029793827, distance: 499.77427424 },
-        { percent: 0.370158503, distance: 0 },
-        { percent: 0.046240019, distance: 499.77445243 },
-        { percent: 0.004290311, distance: 999.54908381 },
-        { percent: 0.006077941, distance: 1000.45040796 },
-        { percent: 0.00381361, distance: 2236.15739956 },
-        { percent: 0.007746395, distance: 706.90479932 },
-        { percent: 0.086402097, distance: 500.2261309 },
-        { percent: 0.018233822, distance: 707.30998314 },
-        { percent: 0.005243714, distance: 1117.98865013 },
-        { percent: 0.013824336, distance: 707.30885857 },
-        { percent: 0.115123346, distance: 500.2255127 },
-        { percent: 0.013585985, distance: 706.90418036 },
-        { percent: 0.003932785, distance: 1580.29624552 },
-        { percent: 0.003575259, distance: 2692.92437556 },
-        { percent: 0.007388869, distance: 9411.05689852 },
-        { percent: 0.004647837, distance: 7587.06758311 },
-        { percent: 0.004647837, distance: 7250.88238955 },
-        { percent: 0.003694435, distance: 9254.89829116 },
-        { percent: 0.004290311, distance: 8160.8208204 },
-        { percent: 0.005958765, distance: 6752.14385967 },
-        { percent: 0.010129901, distance: 5253.43560283 },
-        { percent: 0.005005363, distance: 5532.90475679 },
-        { percent: 0.003932785, distance: 7854.12139705 },
-        { percent: 0.006792992, distance: 5064.43361397 },
-        { percent: 0.00405196, distance: 6375.33888838 },
-        { percent: 0.00405196, distance: 6049.50601924 },
-        { percent: 0.003932785, distance: 9032.39759447 },
-        { percent: 0.004171136, distance: 29058.32966598 },
-        { percent: 0.004886188, distance: 30715.28207815 },
-        { percent: 0.004409486, distance: 18455.48792161 },
-        { percent: 0.004528662, distance: 9085.56306309 },
-        { percent: 0.003575259, distance: 3952.08576863 },
-        { percent: 0.005720415, distance: 3756.77890863 },
-        { percent: 0.004290311, distance: 3020.50659296 },
-        { percent: 0.00583959, distance: 2760.2525658 },
-        { percent: 0.004290311, distance: 3258.13988828 },
-        { percent: 0.00405196, distance: 3887.9882264 },
-        { percent: 0.003932785, distance: 4649.65304787 },
-        { percent: 0.004409486, distance: 5488.52927359 },
-        { percent: 0.004647837, distance: 3692.98312154 },
-        { percent: 0.006673817, distance: 2851.53195512 },
-        { percent: 0.008938148, distance: 1902.95858163 },
-        { percent: 0.010964128, distance: 2474.17362858 },
-        { percent: 0.005482064, distance: 3259.39403441 },
-        { percent: 0.00405196, distance: 4138.55159447 },
-        { percent: 0.007508044, distance: 1904.1510747 },
-        { percent: 0.004171136, distance: 2851.14854144 },
-        { percent: 0.003694435, distance: 4259.08506874 },
-        { percent: 0.011798355, distance: 3260.89433016 },
-        { percent: 0.008818973, distance: 1768.68546042 },
-        { percent: 0.005601239, distance: 4430.98007765 },
-        { percent: 0.010844953, distance: 2151.49023577 },
-        { percent: 0.008223096, distance: 3022.32799488 },
-        { percent: 0.004528662, distance: 4808.90249928 },
-        { percent: 0.003575259, distance: 3952.39945395 },
-        { percent: 0.004409486, distance: 2572.66387062 },
-        { percent: 0.006792992, distance: 2850.92643834 },
-        { percent: 0.005005363, distance: 3554.50348882 },
-        { percent: 0.004767012, distance: 3691.18769298 },
-        { percent: 0.00405196, distance: 4427.64243784 },
-        { percent: 0.00381361, distance: 4314.274705 },
-        { percent: 0.003694435, distance: 61620.00753609 }
-    ];
+    @*var array = Model.ToArray();
+    var stuff = [];
+    
+     @foreach (var item in Model)
+     {
+         var a = [{ percent: item.Percent, distance: item.Distance}];
+     }*@
+    const zones = @Model.ToArray();
+     
+    //const zones = [
+    //    { percent: 0.003575259, distance: 1118.08223702 },
+    //    { percent: 0.003694435, distance: 1000.45288078 },
+    //    { percent: 0.029793827, distance: 499.77427424 },
+    //    { percent: 0.370158503, distance: 0 },
+    //    { percent: 0.046240019, distance: 499.77445243 },
+    //    { percent: 0.004290311, distance: 999.54908381 },
+    //    { percent: 0.006077941, distance: 1000.45040796 },
+    //    { percent: 0.00381361, distance: 2236.15739956 },
+    //    { percent: 0.007746395, distance: 706.90479932 },
+    //    { percent: 0.086402097, distance: 500.2261309 },
+    //    { percent: 0.018233822, distance: 707.30998314 },
+    //    { percent: 0.005243714, distance: 1117.98865013 },
+    //    { percent: 0.013824336, distance: 707.30885857 },
+    //    { percent: 0.115123346, distance: 500.2255127 },
+    //    { percent: 0.013585985, distance: 706.90418036 },
+    //    { percent: 0.003932785, distance: 1580.29624552 },
+    //    { percent: 0.003575259, distance: 2692.92437556 },
+    //    { percent: 0.007388869, distance: 9411.05689852 },
+    //    { percent: 0.004647837, distance: 7587.06758311 },
+    //    { percent: 0.004647837, distance: 7250.88238955 },
+    //    { percent: 0.003694435, distance: 9254.89829116 },
+    //    { percent: 0.004290311, distance: 8160.8208204 },
+    //    { percent: 0.005958765, distance: 6752.14385967 },
+    //    { percent: 0.010129901, distance: 5253.43560283 },
+    //    { percent: 0.005005363, distance: 5532.90475679 },
+    //    { percent: 0.003932785, distance: 7854.12139705 },
+    //    { percent: 0.006792992, distance: 5064.43361397 },
+    //    { percent: 0.00405196, distance: 6375.33888838 },
+    //    { percent: 0.00405196, distance: 6049.50601924 },
+    //    { percent: 0.003932785, distance: 9032.39759447 },
+    //    { percent: 0.004171136, distance: 29058.32966598 },
+    //    { percent: 0.004886188, distance: 30715.28207815 },
+    //    { percent: 0.004409486, distance: 18455.48792161 },
+    //    { percent: 0.004528662, distance: 9085.56306309 },
+    //    { percent: 0.003575259, distance: 3952.08576863 },
+    //    { percent: 0.005720415, distance: 3756.77890863 },
+    //    { percent: 0.004290311, distance: 3020.50659296 },
+    //    { percent: 0.00583959, distance: 2760.2525658 },
+    //    { percent: 0.004290311, distance: 3258.13988828 },
+    //    { percent: 0.00405196, distance: 3887.9882264 },
+    //    { percent: 0.003932785, distance: 4649.65304787 },
+    //    { percent: 0.004409486, distance: 5488.52927359 },
+    //    { percent: 0.004647837, distance: 3692.98312154 },
+    //    { percent: 0.006673817, distance: 2851.53195512 },
+    //    { percent: 0.008938148, distance: 1902.95858163 },
+    //    { percent: 0.010964128, distance: 2474.17362858 },
+    //    { percent: 0.005482064, distance: 3259.39403441 },
+    //    { percent: 0.00405196, distance: 4138.55159447 },
+    //    { percent: 0.007508044, distance: 1904.1510747 },
+    //    { percent: 0.004171136, distance: 2851.14854144 },
+    //    { percent: 0.003694435, distance: 4259.08506874 },
+    //    { percent: 0.011798355, distance: 3260.89433016 },
+    //    { percent: 0.008818973, distance: 1768.68546042 },
+    //    { percent: 0.005601239, distance: 4430.98007765 },
+    //    { percent: 0.010844953, distance: 2151.49023577 },
+    //    { percent: 0.008223096, distance: 3022.32799488 },
+    //    { percent: 0.004528662, distance: 4808.90249928 },
+    //    { percent: 0.003575259, distance: 3952.39945395 },
+    //    { percent: 0.004409486, distance: 2572.66387062 },
+    //    { percent: 0.006792992, distance: 2850.92643834 },
+    //    { percent: 0.005005363, distance: 3554.50348882 },
+    //    { percent: 0.004767012, distance: 3691.18769298 },
+    //    { percent: 0.00405196, distance: 4427.64243784 },
+    //    { percent: 0.00381361, distance: 4314.274705 },
+    //    { percent: 0.003694435, distance: 61620.00753609 }
+    //];
     zones.sort(function (a, b) {
         return a.distance - b.distance;
     });
@@ -148,8 +155,9 @@
 
     var svgEl = document.getElementById("plot");
     var totalPercent = 0;
-
+ 
     zones.forEach(zone => {
+       
         const pathEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
         var color = "rgb(" + (totalPercent * 245) + "," + (totalPercent * 245) + "," + (totalPercent * 245) + ")";
         pathEl.setAttribute("d", pp(totalPercent, (totalPercent += zone.percent),

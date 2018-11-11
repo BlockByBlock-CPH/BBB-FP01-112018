@@ -6,6 +6,8 @@ using System.Web.Mvc;
 using BlockByBlock.Models;
 using System.IO;
 using System.Drawing;
+using System.Web.Script.Serialization;
+using Newtonsoft.Json;
 
 namespace BlockByBlock.Controllers
 {
@@ -15,6 +17,7 @@ namespace BlockByBlock.Controllers
         ApplicationDbContext _data = new ApplicationDbContext();
 
         public ActionResult Nicklas()
+        
         {
             List<Nicklas_View_Model> Nicklas = new List<Nicklas_View_Model>();
 
@@ -155,9 +158,6 @@ namespace BlockByBlock.Controllers
                 }
 
 
-
-                
-
                 var Mtc_acttivity_Count = _data.Mtc_Activities.Where(x => x.Zone_act == 145 && x.Day_act == 5).Select(s => new { s.Count_act}).ToList();
 
                 int total = 0;
@@ -166,6 +166,12 @@ namespace BlockByBlock.Controllers
                     total = total+ item.Count_act;
                 }
 
+
+                return View(Nicklas);
+                //var json = new JavaScriptSerializer().Serialize(last1);
+
+                //return this.Content(json, "application/json");
+
                 //return View("Nicklas_Test", last1);
             }
             catch
@@ -173,9 +179,12 @@ namespace BlockByBlock.Controllers
                 return View(Nicklas);
             }
 
-            
+            //public JsonResult UploadFile()
+            //{
+            //   return Json(Convert.ToString(_imgname), JsonRequestBehavior.AllowGet);
+            //}
 
-            
+
         }
 
 
