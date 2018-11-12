@@ -42,7 +42,7 @@ namespace BlockByBlock.Migrations
             Day_Table.Add(new Models.Days() { Id_Day = 3, Name_Day = "WEDNESDAY" });
             Day_Table.Add(new Models.Days() { Id_Day = 4, Name_Day = "THURSDAY" });
             Day_Table.Add(new Models.Days() { Id_Day = 5, Name_Day = "FRIDAY" });
-            Day_Table.Add(new Models.Days() { Id_Day = 5, Name_Day = "SATURDAY" });
+            Day_Table.Add(new Models.Days() { Id_Day = 6, Name_Day = "SATURDAY" });
             Day_Table.Add(new Models.Days() { Id_Day = 7, Name_Day = "SUNDAY" });
 
 
