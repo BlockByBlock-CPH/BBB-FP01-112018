@@ -19,7 +19,23 @@ namespace BlockByBlock.Controllers
         public ActionResult Maxi_queri()
         {
 
-            
+            //List<Query_17_ViewModel> Result = Query17();
+            //string sJSONResponse = JsonConvert.SerializeObject(Result);
+
+            return View();
+        }
+
+
+        public JsonResult Query17API()
+        {
+            List<Query_17_ViewModel> Result = Query17();
+            return Json(Result, JsonRequestBehavior.AllowGet);
+        }
+
+
+        private List<Query_17_ViewModel> Query17()
+        {
+
 
             //var players = new List<Player>
             //{ new Player { Name = "Alex", Team = "A", Score = 10 },
@@ -30,19 +46,18 @@ namespace BlockByBlock.Controllers
             //var players = new List<Player> { new Player { Name = "Alex", Team = "A", Score = 10 }, new Player { Name = "Anna", Team = "A", Score = 20 }, new Player { Name = "Luke", Team = "L", Score = 60 }, new Player { Name = "Lucy", Team = "L", Score = 40 }, }; var teamTotalScores = from player in players group player by player.Team into playerGroup select new { Team = playerGroup.Key, TotalScore = playerGroup.Sum(x => x.Score), };
 
             var activity2 = from activity in _data.Mtc_Activities
-                                  group activity by activity.Zone_act into Zone_actGroup
-                                  select new {
-                                      Zone_act = Zone_actGroup.Key,
-                                      People = Zone_actGroup.Sum(x => x.Count_act), };
-
-           
-           // var activity3 = activity2.OrderBy(total => total.People).Take(5).ToList();
+                            group activity by activity.Zone_act into Zone_actGroup
+                            select new
+                            {
+                                Zone_act = Zone_actGroup.Key,
+                                People = Zone_actGroup.Sum(x => x.Count_act),
+                            };
 
             var activity4 = activity2.OrderByDescending(total => total.People).Take(5).ToList();
 
             List<Query_17_ViewModel> Result = new List<Query_17_ViewModel>();
 
-            
+
             foreach (var j in activity4)
             {
                 var mtc = _data.Mtcs.FirstOrDefault(b => b.Gid == j.Zone_act);
@@ -57,14 +72,10 @@ namespace BlockByBlock.Controllers
                 };
 
                 Result.Add(single);
-
-
-
-
+              
             }
-            string sJSONResponse = JsonConvert.SerializeObject(Result);
 
-            return View();
+            return Result;
         }
 
 

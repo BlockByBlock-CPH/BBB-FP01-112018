@@ -330,6 +330,7 @@
     <Content Include="Views\Dummy\Mtc.cshtml" />
     <Content Include="Views\Dummy\Nicklas.cshtml" />
     <Content Include="Views\Dummy\Nicklas_Test.cshtml" />
+    <Content Include="Views\Dummy\Maxi_queri.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

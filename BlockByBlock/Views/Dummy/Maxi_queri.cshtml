@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Maxi_queri";
+}
+
+<h2>Maxi_queri</h2>
+<input  type="button" name="check" value="Check" onclick="check()"/>
+
+<script type="text/javascript">
+
+    function check() {
+
+        var url = "/Dummy/Query17API";
+        $.ajax({
+            method: "GET",
+            url: url,
+            dataType: "json"
+        })
+            .done(function (data) {
+                $.each(data, function (k, v) {
+
+
+                });
+
+            });
+    }
+       
+            //$(function () {
+
+            //    var url = "/Dummy/Query17API";
+            //    $.ajax({
+            //        method: "GET",
+            //        url: url,
+            //        dataType: "json"
+            //    })
+            //        .done(function (data) {
+            //            $.each(data, function (k, v) {
+
+                            
+            //            });
+                       
+            //        });
+
+
+
+            //});
+</script>
